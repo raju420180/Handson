@@ -1,5 +1,6 @@
- resource "aws_vpc" "ntier" {
-    type = string
+resource "aws_vpc" "ntier" {
+  cidr_block = var.ntier-vpc-range
+  tags = {
     Name = "ntier"
   }
 resource "aws_subnet" "app1" {
