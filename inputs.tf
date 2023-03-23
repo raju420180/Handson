@@ -1,6 +1,6 @@
 variable "region" {
   type        = string
-  default     = "us-west-2"
+  default     = "ap-northeast-1"
   description = "Region to create resources"
 }
 variable "ntier-vpc-range" {

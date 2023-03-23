@@ -3,6 +3,7 @@ resource "aws_vpc" "ntier" {
   tags = {
     Name = "ntier"
   }
+}
 resource "aws_subnet" "app1" {
   cidr_block        = var.ntier-app1-cidr
   availability_zone = "${var.region}a"
