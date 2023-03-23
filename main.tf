@@ -1,4 +1,5 @@
  resource "aws_vpc" "ntier" {
+    type = string
     Name = "ntier"
   }
 resource "aws_subnet" "app1" {
